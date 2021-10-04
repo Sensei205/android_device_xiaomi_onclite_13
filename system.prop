@@ -112,3 +112,5 @@ pm.sleep_mode=1
 # System
 persist.sys.binary_xml=false
 
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false

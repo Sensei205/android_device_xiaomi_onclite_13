@@ -109,6 +109,17 @@ persist.device_config.runtime_native.usap_pool_enabled=true
 ro.ril.disable.power.collapse=1
 pm.sleep_mode=1
 
+#INTERNET: improve download/upload performance
+net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
+net.rmnet0.dns1=8.8.8.8
+net.rmnet0.dns2=8.8.4.4
+net.dns1=1.1.1.1
+net.dns2=9.9.9.9
+
 # System
 persist.sys.binary_xml=false
 

@@ -424,6 +424,19 @@ PRODUCT_PACKAGES += \
     camera.msm8953_shim \
     libshim_dpmframework
 
+# Thermals
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermals/etc/thermal-engine-sdm845.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-sdm845.conf \
+    $(LOCAL_PATH)/configs/thermals/etc/thermal-engine-sdm845-class0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-sdm845-class0.conf \
+    $(LOCAL_PATH)/configs/thermals/etc/thermal-engine-sdm845-extreme.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-sdm845-extreme.conf \
+    $(LOCAL_PATH)/configs/thermals/etc/thermal-engine-sdm845-high.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-sdm845-high.conf \
+    $(LOCAL_PATH)/configs/thermals/etc/thermal-engine-sdm845-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-sdm845-map.conf \
+    $(LOCAL_PATH)/configs/thermals/etc/thermal-engine-sdm845-nolimits.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-sdm845-nolimits.conf \
+    $(LOCAL_PATH)/configs/thermals/etc/thermal-engine-sdm845-phone.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-sdm845-phone.conf \
+    $(LOCAL_PATH)/configs/thermals/etc/thermal-engine-sdm845-pubgmhd.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-sdm845-pubgmhd.conf \
+    $(LOCAL_PATH)/configs/thermals/etc/thermal-engine-sdm845-sgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-sdm845-sgame.conf \
+    $(LOCAL_PATH)/configs/thermals/etc/thermal-engine-sdm845-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-sdm845-tgame.conf
+
 # USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.msm8953

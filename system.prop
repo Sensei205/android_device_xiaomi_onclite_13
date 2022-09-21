@@ -122,6 +122,8 @@ net.dns2=9.9.9.9
 
 # System
 persist.sys.binary_xml=false
+persist.sys.pixelprops.games=false
+persist.sys.pixelprops.gphotos=true
 
 # Disable vsync for cpu rendered apps
 debug.cpurend.vsync=false
